@@ -1,0 +1,403 @@
+/* 背景 */
+.box 
+{
+	/* 弹性容器 */
+	display: flex;
+	/* 容器中的模块竖向排列 */
+	flex-direction: column;
+	width: 100vw;
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-image: url(../images/背景.svg);
+	/* 图片尺寸填充 */
+	background-size: cover;
+}
+
+/* logo */
+.box .logo 
+{
+	width: 21.23vw;
+	height: 10.08vh;
+	margin-top: 10.86vh;
+	margin-left: 10.44vw;
+	background-repeat: no-repeat;
+	background-image: url(../images/logo.svg);
+	background-size: contain;
+}
+
+/* 登录项 */
+.box .content 
+{
+	display: flex;
+	flex-direction: column;
+	width: 22.6vw;
+	height: 54.19vh;
+	margin-top: 3.93vh;
+	margin-left: 8.76vw;
+	background-repeat: no-repeat;
+	background-image: url(../images/登录框.svg);
+	background-size: contain;
+}
+
+/* 登录注册选项 */
+.box .content .select 
+{
+	display: flex;
+	justify-content: space-between;
+	/* 底部对齐 */
+	align-items: flex-end;
+	width: 14.13vw;
+	height: 3.14vh;
+	margin-top: 5.24vh;
+	margin-left: 4.23vw;
+	padding-left: 1.6vw;
+	padding-right: 1.6vw;
+}
+
+.box .content .select #accountLogin 
+{
+	background-color: transparent;
+	border: none;
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	outline: none;
+	box-shadow: none;
+
+	color: #FFFFFF;
+	font-family: Microsoft YaHei;
+	font-size: 1.32vw;
+	font-weight: normal;
+	line-height: normal;
+	letter-spacing: 0em;
+}
+
+.box .content .select #accountRegist 
+{
+	background-color: transparent;
+	border: none;
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	outline: none;
+	box-shadow: none;
+
+	color: #FFFFFF;
+	font-family: Microsoft YaHei;
+	font-size: 1.02vw;
+	font-weight: normal;
+	line-height: normal;
+	letter-spacing: 0em;
+}
+
+/* 分割线 */
+.box .content .line 
+{
+	/* 子容器能够相对于该容器定位 */
+	position: relative;
+	width: 14.13vw;
+	height: 0.4vh;
+	margin-top: 2.08vh;
+	margin-left: 4.23vw;
+}
+
+.box .content .line .lineLong 
+{
+	/* 该容器相对于父容器定位 */
+	position: absolute;
+	width: 100%;
+	height: 0.15vh;
+	margin-top: 0.12vh;
+	background-color: #346287;
+}
+
+.box .content .line .lineShort 
+{
+	position: absolute;
+	width: 4vw;
+	height: 100%;
+	margin-left: 2.2vw;
+	background-color: #2FB5D2;
+}
+
+/* 填写信息 */
+.box .content .message 
+{
+	position: relative;
+	width: 14.13vw;
+	height: 23.18vh;
+	margin-top: 5.08vh;
+	margin-left: 4.23vw;
+}
+
+.box .content .message .loginMessage 
+{
+	position: absolute;
+	/* 垂直分散对齐 */
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 100%;
+	height: 100%;
+}
+
+.box .content .message .loginMessage #account 
+{
+	width: 100%;
+	height: 4.43vh;
+	padding-left: 1.1vw;
+	padding-right: 1.1vw;
+	font-family: Microsoft YaHei;
+	font-size: 1.02vw;
+	color: #FFFFFF;
+	box-sizing: border-box;
+	border: 0.2vh solid #4079CB;
+	background-color: transparent;
+}
+
+/* 设置输入框背景文字颜色 */
+.box .content .message .loginMessage #account::placeholder 
+{
+	color: #5C75AB;
+}
+
+/* 密码 */
+.box .content .message .loginMessage #password 
+{
+	width: 100%;
+	height: 4.43vh;
+	padding-left: 1.1vw;
+	padding-right: 1.1vw;
+	font-family: Microsoft YaHei;
+	font-size: 1.02vw;
+	color: #FFFFFF;
+	background-color: #193654;
+}
+
+.box .content .message .loginMessage #password::placeholder 
+{
+	color: #5C75AB;
+}
+
+/* 验证码 */
+.box .content .message .loginMessage .check 
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+	height: 4.43vh;
+}
+
+.box .content .message .loginMessage .check #checkInput 
+{
+	height: 100%;
+	width: 8.7vw;
+	padding-left: 1.1vw;
+	padding-right: 1.1vw;
+	font-family: Microsoft YaHei;
+	font-size: 1.02vw;
+	color: #FFFFFF;
+	background-color: #193654;
+}
+
+.box .content .message .loginMessage .check #checkInput::placeholder 
+{
+	color: #5C75AB;
+}
+
+.box .content .message .loginMessage .check #checkDisplay 
+{
+	height: 100%;
+	width: 4.98vw;
+	/* background-color: #fff; */
+}
+
+/* 记住或忘记密码 */
+.box .content .message .loginMessage .forget
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+	height: 4.43vh;
+}
+
+.box .content .message .loginMessage .forget .left 
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+	width: 5.42vw;
+}
+
+.box .content .message .loginMessage .forget .left .checkbox 
+{
+	width: 0.88vw;
+	height: 1.64vh;
+	border: 0.2vh solid #4079CB;
+	background-color: transparent;
+}
+
+.box .content .message .loginMessage .forget .left #rememberPassword 
+{
+	background-color: transparent;
+	border: none;
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	outline: none;
+	box-shadow: none;
+
+	color: #FFFFFF;
+	font-family: Microsoft YaHei;
+	font-size: 1.02vw;
+	font-weight: normal;
+	line-height: normal;
+	letter-spacing: 0em;
+}
+
+.box .content .message .loginMessage .forget #forgetPassword
+{
+	background-color: transparent;
+	border: none;
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	outline: none;
+	box-shadow: none;
+
+	color: #FFFFFF;
+	font-family: Microsoft YaHei;
+	font-size: 1.02vw;
+	font-weight: normal;
+	line-height: normal;
+	letter-spacing: 0em;
+}
+
+.box .content .message .registMessage 
+{
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+
+.box .content .message .registMessage #number 
+{
+	width: 100%;
+	height: 4.43vh;
+	padding-left: 1.1vw;
+	padding-right: 1.1vw;
+	font-family: Microsoft YaHei;
+	font-size: 1.02vw;
+	color: #FFFFFF;
+	box-sizing: border-box;
+	border: 0.2vh solid #4079CB;
+	background-color: transparent;
+}
+
+.box .content .message .registMessage #number::placeholder 
+{
+	color: #5C75AB;
+}
+
+.box .content .message .registMessage #account 
+{
+	width: 100%;
+	height: 4.43vh;
+	padding-left: 1.1vw;
+	padding-right: 1.1vw;
+	font-family: Microsoft YaHei;
+	font-size: 1.02vw;
+	color: #FFFFFF;
+	background-color: #193654;
+}
+
+.box .content .message .registMessage #account::placeholder 
+{
+	color: #5C75AB;
+}
+
+.box .content .message .registMessage #password
+{
+	width: 100%;
+	height: 4.43vh;
+	padding-left: 1.1vw;
+	padding-right: 1.1vw;
+	font-family: Microsoft YaHei;
+	font-size: 1.02vw;
+	color: #FFFFFF;
+	background-color: #193654;
+}
+
+.box .content .message .registMessage #password::placeholder 
+{
+	color: #5C75AB;
+}
+
+.box .content .message .registMessage .check
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+	height: 4.43vh;
+}
+
+.box .content .message .registMessage .check #checkInput 
+{
+	height: 100%;
+	width: 8.7vw;
+	padding-left: 1.1vw;
+	padding-right: 1.1vw;
+	font-family: Microsoft YaHei;
+	font-size: 1.02vw;
+	color: #FFFFFF;
+	background-color: #193654;
+}
+
+.box .content .message .registMessage .check #checkInput::placeholder 
+{
+	color: #5C75AB;
+}
+
+.box .content .message .registMessage .check #checkButton 
+{
+	/* 使容器内的文字垂直和水平居中 */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 4.98vw;
+	font-family: Microsoft YaHei;
+	font-size: 0.88vw;
+	color: #5C75AB;
+	box-sizing: border-box;
+	border: 1px solid #4079CB;
+	background-color: transparent;
+}
+
+/* 大按钮 */
+.box .content #bigButton 
+{
+	width: 14.13vw;
+	height: 4.43vh;
+	margin-left: 4.23vw;
+	margin-top: 5.08vh;
+	/* 设置文字样式 */
+	color: #FFFFFF;
+	font-family: Microsoft YaHei;
+	font-size: 1.32vw;
+	/* 文字水平居中 */
+	text-align: center;
+	/* 文字垂直居中 */
+	line-height: 4.43vh;
+	border: none;
+	background-color: #257EEE;
+}
